@@ -7,8 +7,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #fafafa; */
-  background-color: rgba(135, 206, 250, 0.231);
+  background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
 }
@@ -18,40 +17,29 @@ img {
   max-width: 100%;
 }
 
-input {
-  height: 30px;
-  font-size: Roboto, sans-serif;
-}
-
-button {
-  font-size: 17px;
-  width: 60px;
-  height: 30px;
-}
-
 .timer {
   margin-top: 15px;
-  max-width: 250px;
+  max-width: 200px;
   text-align: center;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: space-between;
 }
 
 .field {
-  background-color: rgba(135, 206, 250, 0.179);
+  background-color: rgba(211, 211, 211, 0.35);
 }
 
 .value {
   display: block;
   font-family: Roboto, sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 400;
   border-bottom: 1px solid gray;
 }
 
 .label {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 500;
 }
