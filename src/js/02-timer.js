@@ -45,18 +45,20 @@ function onStartBtnClick() {
   refs.startBtn.disabled = true;
 
   const intervalId = setInterval(() => {
+    refs.inputEl.disabled = true;
     const currentTime = Date.now();
     const deltaTime = new Date(refs.inputEl.value) - currentTime;
     const { days, hours, minutes, seconds } = convertMs(deltaTime);
     makeData({ days, hours, minutes, seconds });
 
     if (
-      days === '00' &&
-      hours === '00' &&
-      minutes === '00' &&
-      seconds === '00'
+      refs.days.textContent === '00' &&
+      refs.hours.textContent === '00' &&
+      refs.minutes.textContent === '00' &&
+      refs.seconds.textContent === '00'
     ) {
       clearInterval(intervalId);
+      refs.inputEl.disabled = false;
     }
   }, DELAY_TIME);
 }
